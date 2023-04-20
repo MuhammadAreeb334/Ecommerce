@@ -25,19 +25,8 @@ const pro = document.querySelectorAll(".pro")
 /* Shop products page */
 const mainImage = document.querySelector("#main-image")
 const smallImage = document.querySelectorAll(".small-img")
-
-smallImage[0].addEventListener('click', function() {
-    mainImage.src = smallImage[0].src
-})
-
-smallImage[1].addEventListener('click', function() {
-    mainImage.src = smallImage[1].src
-})
-
-smallImage[2].addEventListener('click', function() {
-    mainImage.src = smallImage[2].src
-})
-
-smallImage[3].addEventListener('click', function() {
-    mainImage.src = smallImage[3].src
+smallImage.forEach(function(image){
+    image.addEventListener('click', function(){
+        mainImage.src = image.src
+    })
 })
