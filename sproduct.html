@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link href="style.css" type="text/css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>E-commerce</title>
 </head>
 <body>
@@ -70,45 +72,87 @@
     </section>
 
     <section id="product1" class="section-p1">
-        <h2>Feature Products</h2>
+        <h2>New Arrivals</h2>
         <p>Summer Collection New Modren Designs</p>
-        <div class="pro-container">
-            <div class="pro">
-                <img src="images/products/n1.jpg" alt="First product, branded Shirt for summer collection">
-                <div class="des">
-                    <span>addidas</span>
-                    <h5>Simple Blue Shirt</h5>
-                    <h4>$49</h4>
+        <div class="swiper mySwiper">
+            <div class="pro-container swiper-wrapper">
+                <div class="pro swiper-slide">
+                    <img src="images/products/n1.jpg" alt="First product, branded Shirt for summer collection">
+                    <div class="des">
+                        <span>addidas</span>
+                        <h5>Simple Blue Shirt</h5>
+                        <h4>$49</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="pro">
-                <img src="images/products/n2.jpg" alt="First product, branded Shirt for summer collection">
-                <div class="des">
-                    <span>addidas</span>
-                    <h5>Simple Check Shirt</h5>
-                    <h4>$49</h4>
+                <div class="pro swiper-slide">
+                    <img src="images/products/n2.jpg" alt="First product, branded Shirt for summer collection">
+                    <div class="des">
+                        <span>addidas</span>
+                        <h5>Simple Check Shirt</h5>
+                        <h4>$49</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="pro">
-                <img src="images/products/n3.jpg" alt="First product, branded Shirt for summer collection">
-                <div class="des">
-                    <span>addidas</span>
-                    <h5>Simple White Shirt</h5>
-                    <h4>$49</h4>
+                <div class="pro swiper-slide">
+                    <img src="images/products/n3.jpg" alt="First product, branded Shirt for summer collection">
+                    <div class="des">
+                        <span>addidas</span>
+                        <h5>Simple White Shirt</h5>
+                        <h4>$49</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="pro">
-                <img src="images/products/n4.jpg" alt="First product, branded Shirt for summer collection">
-                <div class="des">
-                    <span>addidas</span>
-                    <h5>Army Shirt</h5>
-                    <h4>$78</h4>
+                <div class="pro swiper-slide">
+                    <img src="images/products/n4.jpg" alt="First product, branded Shirt for summer collection">
+                    <div class="des">
+                        <span>addidas</span>
+                        <h5>Army Shirt</h5>
+                        <h4>$78</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <div class="pro swiper-slide">
+                    <img src="images/products/n5.jpg" alt="First product, branded Shirt for summer collection">
+                    <div class="des">
+                        <span>addidas</span>
+                        <h5>Cotton Blue Shirt</h5>
+                        <h4>$68</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+                <div class="pro swiper-slide">
+                    <img src="images/products/n6.jpg" alt="First product, branded Shirt for summer collection">
+                    <div class="des">
+                        <span>addidas</span>
+                        <h5>Jeans Shorts</h5>
+                        <h4>$29</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+                <div class="pro swiper-slide">
+                    <img src="images/products/n7.jpg" alt="First product, branded Shirt for summer collection">
+                    <div class="des">
+                        <span>addidas</span>
+                        <h5>Plane Cream T-Shirt</h5>
+                        <h4>$49</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+                <div class="pro swiper-slide">
+                    <img src="images/products/n8.jpg" alt="First product, branded Shirt for summer collection">
+                    <div class="des">
+                        <span>addidas</span>
+                        <h5>Simple Long Shirt</h5>
+                        <h4>$65</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
             </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -173,5 +217,30 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     effect: "coverflow",
+     grabCursor: true,
+     centeredSlides: true,
+     slidesPerView: "auto",
+     coverflowEffect: {
+       rotate: 0,
+       stretch: 0,
+       depth: 300,
+       modifier: 1,
+       slideShadows: false,
+     },
+     pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+     },
+   });
+ </script>
 </body>
 </html>

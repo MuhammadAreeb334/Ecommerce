@@ -195,8 +195,8 @@ button.btn-white{
 .pro-container{
     display: flex;
     padding-top: 1em;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
 }
 #product1 .pro{
     width: 23%;
@@ -206,7 +206,7 @@ button.btn-white{
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-    margin: 1em 0;
+    margin:1em 2em;
     transition: .2s ease;
     position: relative;
 }
@@ -859,9 +859,6 @@ footer a:hover{
      #feature .fea-box{
         margin:1em;
      }
-     .pro-container {
-        justify-content: center;
-    }
     #product1 .pro {
         margin: 1em;
     }
