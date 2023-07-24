@@ -21,6 +21,12 @@ const pro = document.querySelectorAll(".pro")
         window.location.href = "sproduct.html"
     })
 
+// const pro = document.querySelectorAll(".pro")
+// pro.forEach( (item) => {
+//     item.addEventListener('click', () => {
+//         window.location.href = "sproduct.html"
+//     })
+// })
 
 /* Shop products page */
 const mainImage = document.querySelector("#main-image")
